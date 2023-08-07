@@ -1,4 +1,5 @@
-﻿using Module07_PatronsDeConception1.NewFolder;
+﻿using Module07_PatronsDeConception1.Affichage_De_Formes;
+using Module07_PatronsDeConception1.NewFolder;
 
 namespace Module07_PatronsDeConception1
 {
@@ -23,11 +24,20 @@ namespace Module07_PatronsDeConception1
             voitures.ForEach(v => Console.WriteLine(v.identifiant + "voiture main"));
             personnes.ForEach(p => Console.WriteLine(p.identifiant + "personne main"));
             w.Join();
-            for (int i = 0; i<10; ++i)
+            for (int i = 0; i < 10; ++i)
             {
                 Console.WriteLine(i);
                 Thread.Sleep(10);
             }
+
+
+            Affichage affiche = new AffichageDessin();
+            Rectangle rect = new Rectangle(affiche);
+            rect.affichage.MethodeAffichage();
+
+            Affichage afficheEcran = new AffichageEcran();
+            Cercle cercle = new Cercle(afficheEcran);
+            cercle.affichage.MethodeAffichage();
         }
 
         static void Worker()

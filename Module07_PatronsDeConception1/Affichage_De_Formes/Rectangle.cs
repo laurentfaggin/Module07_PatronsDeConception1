@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module07_PatronsDeConception1.Affichage_De_Formes
 {
-    internal class Rectangle: Strategy
+    public class Rectangle
     {
+        public Affichage affichage { get; set; }
+        public Rectangle(Affichage p_affichage)
+        {
+            affichage = p_affichage;
+        }
     }
 }

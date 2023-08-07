@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Module07_PatronsDeConception1.Affichage_De_Formes
 {
-    internal interface Strategy
+    public interface Affichage
     {
+        public void MethodeAffichage();
     }
 }

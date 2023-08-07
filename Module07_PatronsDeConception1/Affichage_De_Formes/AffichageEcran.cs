@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module07_PatronsDeConception1.Affichage_De_Formes
 {
-    public class Cercle
+    public class AffichageEcran: Affichage
     {
-        public Affichage affichage { get; set; }
-        public Cercle(Affichage p_affichage)
-        {           
-            affichage = p_affichage;
+        public void MethodeAffichage()
+        {
+            Console.WriteLine("Je m'affiche a l'ecran");
         }
     }
 }
+    
