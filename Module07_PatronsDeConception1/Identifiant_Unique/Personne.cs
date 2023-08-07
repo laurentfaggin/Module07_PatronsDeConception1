@@ -8,19 +8,19 @@ namespace Module07_PatronsDeConception1.NewFolder
 {
     public class Personne
     {
-        private int m_identifiant { get; set; }
+        public int identifiant { get; private set; }
         private string m_name { get; set; }
         private string m_prenom { get; set; }
         private List<Voiture> m_voitures { get; set; }
 
         public Personne()
         {
-            m_identifiant = Identifiant.IdentifiantUnique.Identifier();
+            identifiant = Identifiant.Instance.Identifier();
         }
 
         public Personne(string p_name, string p_prenom)
         {
-            m_identifiant = Identifiant.IdentifiantUnique.Identifier();
+            identifiant = Identifiant.Instance.Identifier();
             m_name = p_name;
             m_prenom = p_prenom;
         }

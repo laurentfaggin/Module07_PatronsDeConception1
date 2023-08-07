@@ -8,7 +8,7 @@ namespace Module07_PatronsDeConception1.NewFolder
 {
     public class Voiture
     {
-        private int m_identifiant { get; set; }
+        public int identifiant { get; private set; }
         private string m_marque { get; set; }
         private string m_modele { get; set; }
         private List<Personne> m_proprietaires { get; set; }
@@ -16,11 +16,11 @@ namespace Module07_PatronsDeConception1.NewFolder
 
         public Voiture()
         {
-            m_identifiant = Identifiant.IdentifiantUnique.Identifier();
+            identifiant = Identifiant.Instance.Identifier();
         }
         public Voiture(string p_marque, string p_modele)
         {
-            m_identifiant = Identifiant.IdentifiantUnique.Identifier();
+            identifiant = Identifiant.Instance.Identifier();
             m_marque = p_marque;
             m_modele = p_modele;
         }

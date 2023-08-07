@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module07_PatronsDeConception1.NewFolder
 {
-    public class Singleton
+    public class Singleton<TypeElement> where TypeElement:new()
     {
-        private static Singleton m_instance;
+        private static TypeElement m_instance;
         private static object m_lock = new object();
 
-        public static Singleton Instance
+        public static TypeElement Instance
         {
             get
             {
@@ -21,7 +21,7 @@ namespace Module07_PatronsDeConception1.NewFolder
                     {
                         if (m_instance == null)
                         {
-                            m_instance = new Singleton();
+                            m_instance = new TypeElement();
                         }
                     }
                 }
