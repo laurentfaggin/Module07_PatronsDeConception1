@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module07_PatronsDeConception1
+namespace Module07_PatronsDeConception1.NewFolder
 {
     public class Identifiant
     {
         private static Identifiant m_identifiant;
-   
+
         private int m_identifiantUnique;
         private static object m_lock = new object();
         public Identifiant()

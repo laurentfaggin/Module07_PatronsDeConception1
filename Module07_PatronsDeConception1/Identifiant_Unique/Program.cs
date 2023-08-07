@@ -1,4 +1,4 @@
-﻿namespace Module07_PatronsDeConception1
+﻿namespace Module07_PatronsDeConception1.NewFolder
 {
     internal class Program
     {

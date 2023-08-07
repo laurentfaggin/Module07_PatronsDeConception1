@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module07_PatronsDeConception1
+namespace Module07_PatronsDeConception1.NewFolder
 {
     public class Singleton
     {
@@ -15,11 +15,11 @@ namespace Module07_PatronsDeConception1
         {
             get
             {
-                if(m_instance is null)
+                if (m_instance is null)
                 {
                     lock (m_lock)
                     {
-                        if(m_instance == null)
+                        if (m_instance == null)
                         {
                             m_instance = new Singleton();
                         }

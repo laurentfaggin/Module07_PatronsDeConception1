@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module07_PatronsDeConception1
+namespace Module07_PatronsDeConception1.NewFolder
 {
     public class Voiture
     {
