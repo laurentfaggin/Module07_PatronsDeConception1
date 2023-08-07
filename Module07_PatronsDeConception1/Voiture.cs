@@ -24,5 +24,9 @@ namespace Module07_PatronsDeConception1
             m_marque = p_marque;
             m_modele = p_modele;
         }
+        public void AjouterProprietaire(Personne person)
+        {
+            m_proprietaires.Add(person);
+        }
     }
 }

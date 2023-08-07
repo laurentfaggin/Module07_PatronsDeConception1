@@ -24,5 +24,9 @@ namespace Module07_PatronsDeConception1
             m_name = p_name;
             m_prenom = p_prenom;
         }
+        public void AjouterVoiture(Voiture voiture)
+        {
+            m_voitures.Add(voiture);
+        }
     }
 }
